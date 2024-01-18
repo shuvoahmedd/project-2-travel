@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* shared code */
+* {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 800;
+    color: #131318;
+}
+
+.org {
+    color: #FF5400;
+}
+
+.primary-btn {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    border: none;
+    padding: 14px 34px;
+}
+
+
+
+/* header part */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 50px;
+}
+
+.company-title {
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
+}
+
+.company-title>h3 {
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 0;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 35px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424247;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+
+
+/* banner section */
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+    border-radius: 16px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-description {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 24px 0 48px;
+    max-width: 670px;
+    text-align: center;
+}
+
+.trip-selection {
+    display: flex;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 1% 2%;
+}
+
+.trip-selection input {
+    color: rgba(19, 19, 24, 0.50);
+    width: 150px;
+    padding: 2% 1%;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.trip-selection select {
+    width: 150px;
+    border: none;
+    border-radius: 8px;
+    padding: 2% 1%;
+    font-size: 0.85rem;
+    color: rgba(19, 19, 24, 0.50);
+}
+
+.trip-selection option {
+    padding: 2% 1%;
+}
+
+.search-btn {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFFFFF;
+    border: none;
+    text-align: center;
+    width: 150px;
+    padding: 2% 1%;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+
+
+
+/* popular-tours section */
+.popular-tours {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-tours-description {
+    width: 48%;
+}
+
+.popular-tours-description>h3 {
+    font-size: 2.5rem;
+}
+
+.popular-tours-description>p {
+    margin: 5% 0;
+}
+
+.popular-tours-img {
+    width: 40%;
+}
+
+.popular-tours-img>img {
+    width: 100%;
+}
+
+.popular-tours-description ul {
+    padding-left: 3%;
+}
+
+.popular-tours-description li {
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+
+/* mobile screen  */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    main {
+        padding: 0 2%;
+    }
+
+    .banner {
+        text-align: center;
+        background-position: center;
+    }
+
+    .trip-selection {
+        flex-direction: column;
+        width: 60%;
+        gap: 16px;
+        padding: 4% 4%;
+    }
+
+    .trip-selection input {
+        width: 92%;
+        padding: 4% 4%;
+        font-size: 1.125rem;
+    }
+
+    .trip-selection select,
+    .search-btn {
+        width: 100%;
+        padding: 4% 4%;
+        font-size: 1.125rem;
+    }
+
+    .popular-tours {
+        flex-direction: column;
+    }
+
+    .popular-tours-description {
+        width: auto;
+        margin-bottom: 5%;
+    }
+
+    .popular-tours-img {
+        width: auto;
+    }
+}
